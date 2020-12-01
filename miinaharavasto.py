@@ -1,5 +1,6 @@
 #Made by Samuli Nikkilä 
 #Made in Finland
+#poista kommentit "voittaminen" ja "tappio" funktioista, jos haluat oikeata tuntua peliin
 
 import haravasto
 import random
