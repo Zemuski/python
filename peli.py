@@ -27,6 +27,7 @@ if kysy == "yes":
                     else:
                         s = False
                         peli = True 
+                        vastaus = randint(x,y)
 else:
     print("Your loss...")
 
@@ -35,14 +36,13 @@ else:
 
 
 while peli == True:
-    vastaus = randint(x,y)
     try: 
         luku = int(input("Guess a number: "))
     except  ValueError:
         print("It's propably a number")
-    except luku < vastaus:
+    if luku < vastaus:
         print("too small")
-    except luku > vastaus:
+    elif luku > vastaus:
         print("too big, sorry")
     else:
         print("that's the number bro!!!")
